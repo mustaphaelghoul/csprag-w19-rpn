@@ -2,7 +2,7 @@
 
 import operator
 #import random
-import fractions
+#import fractions
 
 
 operators = {
@@ -30,16 +30,16 @@ def calculate(myarg):
         raise TypeError("Too many parameters")
     return stack.pop()
 
-def test():
-    print("testing coverage")
+        #def test():
+#print("testing coverage")
 
 def main():
     while True:
         result = calculate(str(input("rpn calc> ")))
-        print("Result: ", fractions.Fraction(result))
+        print("Result: ", result)
     #print(random.randint(1, 100))
 
-test()
+#test()
 
 if __name__ == '__main__':
     main()
